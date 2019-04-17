@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>GIPcore</title>
+  <link rel="stylesheet" th:href="@{/css/materialdesignicons.min.css}">
+  <link rel="stylesheet" th:href="@{/css/style.css}">
+  <link rel="stylesheet" th:href="@{/css/misestilos.css}">
+</head>
+<body>
+
+	<div class="seccion_doble">
+		<div class="seccion_a">
+			<div class="logo">
+				<img style="width: 328px;" th:src="@{/img/gip_core.png}"/>		
+			</div>
+			<div class="seccion_multiple_2">
+				<div class="seccion_c">
+		
+				</div>
+				<div class="seccion_d">
+				</div>
+			</div>
+		</div>
+		<div class="seccion_b">
+			<div class="contenedor">
+			<h1><a th:href="@{/login}" class="a_login">Login</a> / <a th:href="@{/registro}" class="a_registro">Registro</a></h1>
+			<br>
+			<form th:action="@{/registro}" method="post" th:object="${usuarionuevo}">
+			 	<label>Usuario:</label>	 
+			 	<input type="text" name="username" required autofocus>
+			 	<label>Contraseña:</label>
+			 	<input type="password" name="password" required>
+			 	 <button class="btn btn-lg btn-primary btn-block" type="submit">Registrar</button>       
+			 </form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+

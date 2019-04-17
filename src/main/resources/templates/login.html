@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	 <form th:action="@{/login}" method="post" >
+	 	<label>Usuario:</label>	 
+	 	<input type="text" name="username" required autofocus>
+	 <br>
+	 	<label>Contraseña:</label>
+	 	<input type="password" name="password" required>
+	 <br>
+	 	 <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>       
+	 </form>
+</body>
+</html>
